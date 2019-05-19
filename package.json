@@ -1,0 +1,22 @@
+{
+  "name": "automatizacionfalabella",
+  "version": "1.0.0",
+  "description": "Examen Automatización Falabella",
+  "scripts": {
+    "test": "./node_modules/.bin/cucumber-js.cmd",
+    "test-report": "./node_modules/.bin/cucumber-js.cmd --format json:./reports/report.json",
+    "test-chrome": "./node_modules/.bin/cucumber-js.cmd  --world-parameters \"{\\\"browser\\\": \\\"chrome\\\"}\"",
+    "test-ie": "./node_modules/.bin/cucumber-js.cmd  --world-parameters \"{\\\"browser\\\": \\\"ie\\\"}\"",
+    "test-chrome-report": "./node_modules/.bin/cucumber-js.cmd  --format json:./reports/report.json --world-parameters \"{\\\"browser\\\": \\\"chrome\\\"}\"",
+    "test-ie-report": "./node_modules/.bin/cucumber-js.cmd  --format json:./reports/report.json --world-parameters \"{\\\"browser\\\": \\\"ie\\\"}\"",
+    "reporte-html": "node htmlReport.js"
+  },
+  "author": "Julián Mitchell",
+  "license": "",
+  "devDependencies": {
+    "base64-img": "^1.0.4",
+    "cucumber": "^5.1.0",
+    "cucumber-html-reporter": "^5.0.0",
+    "testcafe": "^1.1.4"
+  }
+}
